@@ -19,10 +19,15 @@ var RESTtester = Class.$extend({
       '</select>' +
       '<label for="url">URL (t.ex. product, product/1, user, user/1):</label>' +
       '<input id="url" type="text">' +
-      '<label for="data">Data att skicka (JSON):</label>' +
-      '<textarea id="data"></textarea>' +
+      '<label style="display:none" for="data">Data att skicka (JSON):</label>' +
+      '<textarea style="display:none" id="data"></textarea>' +
       '<input class="submit" type="submit" value="Skicka">'
     ).appendTo(this.form);
+
+    $('select#method').change(function(){
+      $("textarea#data, label[for=data]")
+        [this.value == "PUT" || this.value == "POST" ? "show" : "hide"]();
+    });
 
     // När formuläret "skickas"
     // hindra sidomladdning, samla ihop data från det

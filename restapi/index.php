@@ -145,6 +145,7 @@ class RestAPI {
     // then assume it is an id
     if(count($urlFragments) == 2 && is_numeric($urlFragments[1])){
       $where = "id = $urlFragments[1]";
+      $this -> entityId = $urlFragments[1];
     }
 
     // see the following url in order to stand comparison operators:

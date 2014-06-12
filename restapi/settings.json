@@ -2,6 +2,6 @@
   "dbhost" : "localhost",
   "dbuser" : "root",
   "dbpwd" : "mysql",
-  "dbname" : "resttest2",
+  "dbname" : "catshow",
   "sqlQueryAsResponseHeader" : true
 }
