@@ -1,0 +1,13 @@
+{
+  "host": "localhost",
+  "database": "books",
+  "username" : "root",
+  "password":"",
+  
+  "getBooksByTitle" : 
+    "SELECT * FROM booktitles WHERE title = '[title]'",
+
+  "getBooksByAuthor" : [
+    "SELECT * FROM booktitles WHERE author ='[author]'"
+  ]
+}

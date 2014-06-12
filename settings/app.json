@@ -1,0 +1,37 @@
+{
+    "title": "New project",
+    "version": "0.1",
+
+    "/* below just examples, replace with fonts you need */" : "",
+
+    "googleFonts" : [
+        "Alegreya Sans:400,700,400italic",
+        "Habibi"
+    ],
+
+    "/* you must give php write rights to php/caljac/cache   */" : "",
+    "/* and read rights to everything if you want to try the */" : "",
+    "/* experimental feature compressJsAndCss... */" : "",
+
+    "compressJsAndCss": false,
+
+    "/* unless you know what you are doing don't change loadOrder */" : "",
+
+    "loadOrderJS": [
+      "less.js",
+        "jquery.js",
+        "jquery.ui.js",
+        "...",
+        "js.js"
+    ],
+
+    "loadOrderCSS": [
+        "meyerReset.css",
+        "jquery-ui.css",
+        "...",
+        "css.css",
+        "css.less"
+    ],  
+
+    "/* based on the Nodebite siteTemplate v 1.5          */" : ""
+}

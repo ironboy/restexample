@@ -1,0 +1,7 @@
+{
+  "dbhost" : "localhost",
+  "dbuser" : "root",
+  "dbpwd" : "mysql",
+  "dbname" : "resttest2",
+  "sqlQueryAsResponseHeader" : true
+}

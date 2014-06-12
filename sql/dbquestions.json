@@ -1,0 +1,39 @@
+{
+  "host": "localhost",
+  "database": "books",
+  "username" : "root",
+  "password":"",
+  
+  "getBooksByTitle" : [
+    "SELECT * FROM booktitles WHERE title =",
+    [["title"]]
+  ],
+
+  "getBooksByAuthor" : [
+    "SELECT * FROM booktitles WHERE author =",
+    [["author"]]
+  ],
+
+  "getBookByISBN" : [
+    "SELECT * FROM booktitles WHERE isbn =",
+    [["isbn"]]
+  ],
+
+  "autoComplete" : [
+    "SELECT * FROM booktitles WHERE isbn LIKE",
+    [["%","fragment","%"]],
+    "OR author LIKE",
+    [["%","fragment","%"]],
+    "OR title LIKE",
+    [["%","fragment","%"]]
+  ],
+
+  "updateBookTitle" : [
+    "UPDATE booktitles SET title =",
+    [["title"]],
+    "WHERE isbn=",
+    [["isbn"]],
+    ";SELECT * FROM booktitles WHERE isbn=",
+    [["isbn"]]
+  ]
+}
