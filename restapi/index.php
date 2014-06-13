@@ -89,7 +89,7 @@ class RestAPI {
 
   protected function requestURL(){
     // get the requested url
-    $url = $_SERVER["REQUEST_URI"];
+    $url = utf8_decode(urldecode($_SERVER["REQUEST_URI"]));
 
     // base path to this file
     $path = str_replace($_SERVER['DOCUMENT_ROOT'],'',$_SERVER['PHP_SELF']);
